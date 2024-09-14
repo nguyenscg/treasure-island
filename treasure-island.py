@@ -27,15 +27,15 @@ print("Your mission is to find the hidden treasure. Good luck!")
 
 option1 = input('You arrived at a path, which way do you want to go? Type: "Left" or "Right"').lower()
 
-if option1 == "Left":
+if option1 == "left":
     option2 = input("You see a dragon waiting at a post. The dragon offers you a ride. Type: 'Accept' or 'Decline'").lower()
-    if option2 == "Accept":
+    if option2 == "accept":
         option3 = input("Which portal are you taking? Type: 'Red', 'Green', or 'Blue' ").lower()
-        if option3 == "Red":
+        if option3 == "red":
             print("The portal teleported you to an area with trolls that attacked you.")
-        elif option3 == "Green":
+        elif option3 == "green":
             print("Yippie! You found the treasure! You may leave the island now.")
-        elif option3 == "Blue":
+        elif option3 == "blue":
             print("The portal teleported you to the ocean. Game over!")
         else:
             print("You didn't pick a portal. Game over!")
