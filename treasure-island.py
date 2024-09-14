@@ -25,17 +25,17 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island!")
 print("Your mission is to find the hidden treasure. Good luck!")
 
-firstpath = input('You arrived at a path, which way do you want to go? Type: "Left" or "Right"').lower()
+option1 = input('You arrived at a path, which way do you want to go? Type: "Left" or "Right"').lower()
 
-if firstpath == "Left":
-    secondpath = input("You see a dragon waiting at a post. The dragon offers you a ride. Type: 'Accept' or 'Decline'").lower()
-    if secondpath == "Accept":
-        lastpath = input("Which portal are you taking? Type: 'Red', 'Green', or 'Blue' ").lower()
-        if lastpath == "Red":
+if option1 == "Left":
+    option2 = input("You see a dragon waiting at a post. The dragon offers you a ride. Type: 'Accept' or 'Decline'").lower()
+    if option2 == "Accept":
+        option3 = input("Which portal are you taking? Type: 'Red', 'Green', or 'Blue' ").lower()
+        if option3 == "Red":
             print("The portal teleported you to an area with trolls that attacked you.")
-        elif lastpath == "Green":
+        elif option3 == "Green":
             print("Yippie! You found the treasure! You may leave the island now.")
-        elif lastpath == "Blue":
+        elif option3 == "Blue":
             print("The portal teleported you to the ocean. Game over!")
         else:
             print("You didn't pick a portal. Game over!")
