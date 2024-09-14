@@ -25,11 +25,21 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island!")
 print("Your mission is to find the hidden treasure. Good luck!")
 
-# left or right
-# right will print game over and exit
+firstpath = input('You arrived at a path, which way do you want to go? Type: "Left" or "Right"').lower()
 
-# swim or wait
-# swim will print game over and exit
-
-# Which door?
-# Red is game over, Blue is Game over, Yellow you win!
+if firstpath == "Left":
+    secondpath = input("You see a dragon waiting at a post. The dragon offers you a ride. Type: 'Accept' or 'Decline'").lower()
+    if secondpath == "Accept":
+        lastpath = input("Which portal are you taking? Type: 'Red', 'Green', or 'Blue' ").lower()
+        if lastpath == "Red":
+            print("The portal teleported you to an area with trolls that attacked you.")
+        elif lastpath == "Green":
+            print("Yippie! You found the treasure! You may leave the island now.")
+        elif lastpath == "Blue":
+            print("The portal teleported you to the ocean. Game over!")
+        else:
+            print("You didn't pick a portal. Game over!")
+    else:
+        print("Game over! The dragon got annoyed and decided to eat you.")
+else:
+    print("You fell into a hole. Game over!")
