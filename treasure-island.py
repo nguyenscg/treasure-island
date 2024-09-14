@@ -22,6 +22,8 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 # Welcome to Treasure Island.
 # Your mission is to find the treasure.
+print("Welcome to Treasure Island!")
+print("Your mission is to find the hidden treasure. Good luck!")
 
 # left or right
 # right will print game over and exit
